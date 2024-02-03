@@ -5,9 +5,7 @@ import fs from "fs";
 const app = express();
 const port = 3000;
 var blogId = 0;
-var listOfBlogs = [
-  { id: 0, title: "first", body: "I am Sahil", deleted: false },
-];
+var listOfBlogs = [];
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
