@@ -15,6 +15,7 @@
       <div class="blogs">
         <ul class="blogList">
           <% for(var i=0; i<list.length; i++) { %>
+<<<<<<< HEAD
             <% if(list[i].deleted == false) { %>
             <li>
               <% var contents = fs.readFileSync("public/resources/blogs/" + list[i].id + '.json'); %>
@@ -22,6 +23,14 @@
               <a href="/view?topic=<%= contents.id%>"><%= contents.title %></a>
               </li>
           <% } } %>
+=======
+            <li>
+              <% var contents = fs.readFileSync("public/resources/blogs/" + list[i].id + '.json'); %>
+             <% contents = JSON.parse(contents); %>
+              <%= contents.title %>
+              </li>
+          <% } %>
+>>>>>>> df9e2815489fd0488e621d91f00746503c8cd5eb
         </ul>
       </div>
     </div>
