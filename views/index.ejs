@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sahil's blog</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Sahil's Blog</div>
+      <div class="create">
+        <a href="/create"><button class="plus">Create</button></a>
+      </div>
+      <div class="blogs">
+        <ul class="blogList">
+          <% for(var i=0; i<list.length; i++) { %>
+            <li>
+              <% var contents = fs.readFileSync("public/resources/blogs/" + list[i].id + '.json'); %>
+             <% contents = JSON.parse(contents); %>
+              <%= contents.title %>
+              </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
