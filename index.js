@@ -36,6 +36,7 @@ app.post("/delete", (req, res) => {
 app.get("/view", (req, res) => {
   var id = req.query.topic;
   console.log("Give me blog ", id);
+  console.log(listOfBlogs);
   res.render("view.ejs", {
     id: id,
     title: listOfBlogs[id].title,

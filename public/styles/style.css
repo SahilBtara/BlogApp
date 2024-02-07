@@ -1,7 +1,18 @@
 body {
-  background-color: antiquewhite;
+  background-color: whitesmoke;
 }
 
 .container {
-  margin-left: 25%;
+  /* text-align: center; */
+  background-color: aliceblue;
+  width: 50%;
+  margin: auto;
+}
+
+.header {
+  margin-left: 45%;
+}
+
+#create-btn {
+  margin-right: 1em;
 }

@@ -1,8 +1,10 @@
 <%- include("header.ejs") %>
+</nav>
+<div class="container">
     <form action="/create" method="POST">
       <input type="text" name="title" placeholder="title" />
       <br />
-      <input type="text" name="body" />
+      <textarea name="body" id="" cols="30" rows="10"></textarea>
       <button>Save</button>
     </form>
   </body>
