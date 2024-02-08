@@ -1,18 +1,80 @@
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set body font and background */
 body {
-  background-color: whitesmoke;
+  font-family: Arial, sans-serif;
+  background-color: #f6f6f6;
 }
 
+/* Container styles */
 .container {
-  /* text-align: center; */
-  background-color: aliceblue;
-  width: 50%;
-  margin: auto;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
-.header {
-  margin-left: 45%;
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
 }
 
+.navbar-brand h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Create button styles */
 #create-btn {
-  margin-right: 1em;
+  background-color: #03a87c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#create-btn:hover {
+  background-color: #028463;
+}
+
+/* Blog list styles */
+.blogList {
+  list-style: none;
+  padding: 0;
+}
+
+.blog-list-itm {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-list-itm a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.blog-list-itm p {
+  color: #666;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.blog-list-itm a:hover {
+  color: #03a87c;
 }
